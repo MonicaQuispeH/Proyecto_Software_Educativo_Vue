@@ -1,0 +1,45 @@
+
+:root {
+  --gato-radio-boton: 16px;
+  --gato-enfoque: #ffbf47;
+}
+.gato-boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 2px solid transparent;
+  border-radius: var(--gato-radio-boton);
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 5px 0 var(--gato-sombra-boton, #1e3a8a);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.gato-boton:hover:not(:disabled) { transform: translateY(-2px); filter: brightness(1.045); text-decoration: none; }
+.gato-boton:active:not(:disabled) { transform: translateY(2px); box-shadow: 0 2px 0 var(--gato-sombra-boton, #1e3a8a); }
+.gato-boton:disabled { opacity: .65; cursor: not-allowed; box-shadow: none; }
+.gato-boton:focus-visible { outline: 3px solid var(--gato-enfoque); outline-offset: 4px; }
+.gato-boton-morado { background: #7833c7; color: #fff !important; border-color: #6424a9; --gato-sombra-boton: #4b177d; }
+.gato-boton-azul { background: #225de8; color: #fff !important; border-color: #174cc6; --gato-sombra-boton: #153b9e; }
+.gato-boton-verde { background: #0c955f; color: #fff !important; border-color: #087b4f; --gato-sombra-boton: #086343; }
+.gato-boton-naranja { background: #f6a92c; color: #342007 !important; border-color: #ce7c13; --gato-sombra-boton: #a85d0c; }
+.gato-boton-rojo { background: #e74b5d; color: #fff !important; border-color: #c62a40; --gato-sombra-boton: #a51e31; }
+.gato-boton-morado:hover,.gato-boton-azul:hover,.gato-boton-verde:hover,.gato-boton-rojo:hover { color: #fff !important; }
+.gato-boton-naranja:hover { color:#342007 !important; }
+
+button:not(.gato-boton):not([class*="cerrar"]):not([class*="icon"]):not([class*="accion"]):not([class*="flecha"]):not([class*="opcion"]):not([class*="respuesta"]):not([class*="control"]):not([class*="nav"]),
+a.btn:not(.gato-boton),a[class*="btn-"]:not([class*="cerrar"]):not(.gato-boton) {
+  border-radius: var(--gato-radio-boton) !important;
+  font-weight: 700;
+  transition: transform .15s ease, filter .15s ease, box-shadow .15s ease;
+}
+button:not(.gato-boton):not(:disabled):focus-visible,a.btn:focus-visible { outline: 3px solid var(--gato-enfoque); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .gato-boton,button,a.btn { transition: none !important; } }
+.gato-tile-etiqueta { display: inline-block; margin-bottom: 12px; border-radius: 13px; padding: 8px 14px; background: #e8e4ff; color: #42339b; font-weight: 800; }

@@ -1,0 +1,46 @@
+
+.alumno-juegos-pantalla .bienvenida-juegos-principal{padding:34px;border-radius:30px;background:linear-gradient(135deg,#eff6ff 0%,#fff7ed 48%,#f5f3ff 100%);border:2px solid #e2e8f0;box-shadow:0 18px 45px rgba(15,23,42,.08)}
+.alumno-juegos-pantalla .bienvenida-juegos-cabecera{display:flex;align-items:center;justify-content:space-between;gap:25px;margin:0 0 34px}
+.alumno-juegos-pantalla .etiqueta-juegos{display:inline-block;color:#2563eb;font-size:11px;font-weight:900;letter-spacing:1.4px;margin-bottom:5px}
+.alumno-juegos-pantalla .bienvenida-juegos-cabecera h2{margin:6px 0 10px;font-size:clamp(30px,3vw,45px);color:#172554;font-weight:900}
+.alumno-juegos-pantalla .bienvenida-juegos-cabecera p{margin:0;color:#64748b;font-size:18px;line-height:1.6;max-width:730px}
+.alumno-juegos-pantalla .bienvenida-gato-grande{width:150px;height:150px;flex:0 0 150px;border-radius:36px;background:#fff;display:grid;place-items:center;border:3px solid #dbeafe;box-shadow:0 12px 28px #2563eb1f}
+.alumno-juegos-pantalla .bienvenida-gato-grande img{width:138px;height:138px;object-fit:contain}
+.alumno-juegos-pantalla .seleccion-tipos-juegos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.alumno-juegos-pantalla .tipo-juego-card{min-height:310px;border:0;border-radius:24px;padding:0;overflow:hidden;cursor:pointer;display:grid;grid-template-columns:38% 62%;text-align:left;background:#fff;box-shadow:0 16px 36px #0f172a1a;transition:transform .22s ease,box-shadow .22s ease}
+.alumno-juegos-pantalla .tipo-juego-card:hover{transform:translateY(-6px);box-shadow:0 24px 44px #0f172a26}
+.alumno-juegos-pantalla .tipo-juego-card:focus-visible{outline:4px solid #f9aa25;outline-offset:3px}
+.alumno-juegos-pantalla .tipo-juego-icono{display:grid;place-items:center;font-size:clamp(50px,5vw,76px);color:white}
+.alumno-juegos-pantalla .tipo-juego-lectura .tipo-juego-icono{background:linear-gradient(145deg,#2563eb,#60a5fa)}
+.alumno-juegos-pantalla .tipo-juego-dinamico .tipo-juego-icono{background:linear-gradient(145deg,#8b28e5,#db2777)}
+.alumno-juegos-pantalla .tipo-juego-texto{padding:clamp(18px,2vw,34px);display:flex;flex-direction:column;justify-content:center}
+.alumno-juegos-pantalla .tipo-juego-texto span{font-size:12px;letter-spacing:.09em;font-weight:900;color:#64748b}
+.alumno-juegos-pantalla .tipo-juego-texto h2{margin:8px 0 12px;font-size:clamp(22px,2vw,30px);color:#172554;font-weight:900}
+.alumno-juegos-pantalla .tipo-juego-texto p{margin:0 0 16px;color:#64748b;line-height:1.65;font-size:16px}
+.alumno-juegos-pantalla .tipo-juego-texto .boton-aventura-visible{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;border-radius:17px;color:#fff;background:#205de0;box-shadow:0 5px 0 #123b91,0 10px 20px #153e8440;font-size:18px;font-weight:900;margin-top:12px;border:2px solid #ffffffaa}
+.alumno-juegos-pantalla .tipo-juego-dinamico .boton-aventura-visible{background:#a12dc9;box-shadow:0 5px 0 #6b168b,0 10px 20px #5d1c8d40}
+.alumno-juegos-pantalla .grid-juegos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.alumno-juegos-pantalla .juego-card{background:white;border-radius:18px;overflow:hidden;border:1px solid #e8edf5;box-shadow:0 8px 24px #0f172a12}
+.alumno-juegos-pantalla .juego-ilustracion{height:125px;display:grid;place-items:center;color:#fff;font-size:47px}
+.alumno-juegos-pantalla .juego-morado{background:linear-gradient(135deg,#7c3aed,#a78bfa)}
+.alumno-juegos-pantalla .juego-azul{background:linear-gradient(135deg,#2563eb,#38bdf8)}
+.alumno-juegos-pantalla .juego-amarillo{background:linear-gradient(135deg,#f59e0b,#facc15)}
+.alumno-juegos-pantalla .juego-verde{background:linear-gradient(135deg,#16a34a,#4ade80)}
+.alumno-juegos-pantalla .juego-naranja{background:linear-gradient(135deg,#ea580c,#fb923c)}
+.alumno-juegos-pantalla .juego-rosa{background:linear-gradient(135deg,#db2777,#f472b6)}
+.alumno-juegos-pantalla .juego-celeste{background:linear-gradient(135deg,#0891b2,#22d3ee)}
+.alumno-juegos-pantalla .juego-contenido{padding:18px}
+.alumno-juegos-pantalla .juego-contenido h2{font-size:19px;font-weight:900;color:#172554;margin:4px 0 12px}
+.alumno-juegos-pantalla .juego-contenido p{font-size:14px;color:#64748b;min-height:42px}
+.alumno-juegos-pantalla .acciones-juego{margin-top:15px}
+@media(max-width:1250px){.alumno-juegos-pantalla .seleccion-tipos-juegos{grid-template-columns:1fr}}
+@media(max-width:900px){.alumno-juegos-pantalla .grid-juegos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.alumno-juegos-pantalla .bienvenida-juegos-principal{padding:20px}.alumno-juegos-pantalla .bienvenida-gato-grande{display:none}.alumno-juegos-pantalla .tipo-juego-card{grid-template-columns:32% 68%;min-height:220px}.alumno-juegos-pantalla .tipo-juego-icono{font-size:48px}.alumno-juegos-pantalla .tipo-juego-texto p{font-size:13px}.alumno-juegos-pantalla .tipo-juego-texto .boton-aventura-visible{font-size:14px}.alumno-juegos-pantalla .grid-juegos{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.alumno-juegos-pantalla .tipo-juego-card{transition:none}}
+
+.alumno-juego-pantalla-original{z-index:6000}
+.alumno-juego-pantalla-original .juego-interactivo{width:100%;max-width:1180px;margin:0 auto}
+@media(max-width:760px){
+  .alumno-juego-pantalla-original{padding:10px}
+  .alumno-juego-pantalla-original .prueba-header{gap:12px;flex-wrap:wrap}
+}

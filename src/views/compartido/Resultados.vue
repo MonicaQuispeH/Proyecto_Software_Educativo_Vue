@@ -1,0 +1,6 @@
+<script setup>
+import {ref,onMounted} from 'vue';import {api} from '../../services/api';import Navbar from '../../components/admin/Navbar.vue';import Sidebar from '../../components/admin/Sidebar.vue';import '../../styles/admin/dashboard.css'
+const datos=ref([]),error=ref('');onMounted(async()=>{try{datos.value=await api('/contenidos/resultados')}catch(e){error.value=e.message}})
+</script>
+<template><Navbar/><div class="gato-app-layout"><Sidebar/><main class="gato-content p-4"><h1 class="h3">Resultados de evaluaciones</h1><div v-if="error" class="alert alert-danger">{{error}}</div><table class="table table-striped bg-white"><thead><tr><th>Fecha</th><th>Estudiante</th><th>Paralelo</th><th>Evaluación</th><th>Nota</th></tr></thead><tbody><tr v-for="(d,i) in datos" :key="i"><td>{{new Date(d.fecha).toLocaleDateString()}}</td><td>{{d.estudiante}}</td><td>{{d.curso}}</td><td>{{d.evaluacion}}</td><td>{{d.puntaje}} / {{d.total}}</td></tr></tbody></table><p v-if="!datos.length" class="text-muted">Aún no se registraron resultados.</p></main></div></template>
+<style scoped>.gato-app-layout{display:flex;background:#f4f8ff;min-height:calc(100vh - 82px)}.gato-app-layout .gato-content{flex:1;min-width:0}.gato-app-layout :deep(.sidebar){flex:0 0 250px}@media(max-width:760px){.gato-app-layout{flex-direction:column}}</style>

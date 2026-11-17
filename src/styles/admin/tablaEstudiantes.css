@@ -1,0 +1,236 @@
+
+
+.tabla-estudiantes-contenedor {
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .08);
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.tabla-estudiantes-contenedor table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.tabla-estudiantes-contenedor th {
+    background: #2563eb;
+    color: white;
+    padding: 13px 8px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.tabla-estudiantes-contenedor td {
+    padding: 13px 8px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.tabla-estudiantes-contenedor tbody tr:hover {
+    background: #f8f9ff;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(1),
+.tabla-estudiantes-contenedor td:nth-child(1) {
+    width: 5%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(2),
+.tabla-estudiantes-contenedor td:nth-child(2) {
+    width: 11%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(3),
+.tabla-estudiantes-contenedor td:nth-child(3) {
+    width: 17%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(4),
+.tabla-estudiantes-contenedor td:nth-child(4) {
+    width: 11%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(5),
+.tabla-estudiantes-contenedor td:nth-child(5) {
+    width: 14%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(6),
+.tabla-estudiantes-contenedor td:nth-child(6) {
+    width: 8%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(7),
+.tabla-estudiantes-contenedor td:nth-child(7) {
+    width: 10%;
+}
+
+.tabla-estudiantes-contenedor th:nth-child(8),
+.tabla-estudiantes-contenedor td:nth-child(8) {
+    width: 24%;
+}
+
+.tabla-estudiantes-contenedor .estado {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.tabla-estudiantes-contenedor .activo {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.tabla-estudiantes-contenedor .inactivo {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.tabla-estudiantes-contenedor .acciones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 5px;
+
+    width: 100%;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+.tabla-estudiantes-contenedor .acciones button {
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: .2s;
+
+    box-sizing: border-box;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: inherit;
+}
+
+.tabla-estudiantes-contenedor .btn-editar {
+    width: 32px;
+    min-width: 32px;
+
+    height: 32px;
+    min-height: 32px;
+
+    padding: 0;
+
+    background: #f59e0b;
+}
+
+.tabla-estudiantes-contenedor .btn-editar:hover {
+    background: #d97706;
+    transform: scale(1.05);
+}
+
+.tabla-estudiantes-contenedor .btn-password {
+    width: 32px;
+    min-width: 32px;
+
+    height: 32px;
+    min-height: 32px;
+
+    padding: 0;
+
+    background: #6366f1;
+}
+
+.tabla-estudiantes-contenedor .btn-password:hover {
+    background: #4f46e5;
+    transform: scale(1.05);
+}
+
+.tabla-estudiantes-contenedor .btn-desactivar {
+    width: 75px;
+    min-width: 75px;
+
+    height: 32px;
+    min-height: 32px;
+
+    padding: 0;
+
+    background: #ef4444;
+
+    font-size: 11px;
+}
+
+.tabla-estudiantes-contenedor .btn-desactivar:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+.tabla-estudiantes-contenedor .btn-activar {
+    width: 65px;
+    min-width: 65px;
+
+    height: 32px;
+    min-height: 32px;
+
+    padding: 0;
+
+    background: #16a34a;
+
+    font-size: 11px;
+}
+
+.tabla-estudiantes-contenedor .btn-activar:hover {
+    background: #15803d;
+    transform: scale(1.05);
+}
+
+.tabla-estudiantes-contenedor .btn-editar i,
+.tabla-estudiantes-contenedor .btn-password i {
+    line-height: 1;
+    font-size: 12px;
+}
+
+.tabla-estudiantes-contenedor .sin-resultados {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}

@@ -1,0 +1,63 @@
+.listas-layout{display:flex;min-height:100vh;background:#f5f7fb}.listas-layout .contenido{flex:1;padding:28px 32px;box-sizing:border-box;overflow:auto}.encabezado-listas{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}.encabezado-listas h1{margin:0;color:#1e3a8a;font-size:27px}.encabezado-listas p{margin:7px 0 0;color:#64748b}.btn-imprimir-lista{border:0;border-radius:9px;padding:11px 16px;background:#1e3a8a;color:#fff;cursor:pointer;font-weight:600}.btn-imprimir-lista:hover{background:#163174}.resumen-listas{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px}.tarjeta-curso-lista{background:#fff;border-radius:13px;padding:17px 18px;box-shadow:0 4px 13px rgba(15,23,42,.07);cursor:pointer;border:1px solid transparent;display:flex;flex-direction:column;gap:3px}.tarjeta-curso-lista:hover{border-color:#2563eb}.tarjeta-curso-lista span{font-weight:700;color:#1e3a8a}.tarjeta-curso-lista strong{font-size:25px;color:#111827}.tarjeta-curso-lista small{color:#64748b}.barra-listas{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:#fff;padding:15px;border-radius:13px;box-shadow:0 4px 13px rgba(15,23,42,.06);margin-bottom:14px}.busqueda-listas{flex:1;min-width:260px;display:flex;align-items:center;gap:9px;border:1px solid #d8dee9;border-radius:8px;padding:0 11px;height:40px}.busqueda-listas i{color:#64748b}.busqueda-listas input{border:0;outline:0;width:100%;font-size:14px}.filtro-listas{height:40px;border:1px solid #d8dee9;border-radius:8px;padding:0 10px;background:#fff;color:#334155}.btn-limpiar-listas{height:40px;border:1px solid #cbd5e1;background:#fff;border-radius:8px;padding:0 13px;cursor:pointer;color:#334155}.cabecera-tabla-listas{display:flex;justify-content:space-between;background:#fff;border-radius:12px 12px 0 0;padding:14px 18px;margin-top:4px}.cabecera-tabla-listas strong{color:#1e3a8a}.cabecera-tabla-listas span{margin-left:12px;color:#64748b;font-size:13px}.tabla-listas-contenedor{background:#fff;border-radius:0 0 12px 12px;overflow:auto;box-shadow:0 5px 15px rgba(15,23,42,.07)}.tabla-listas-contenedor table{width:100%;border-collapse:collapse}.tabla-listas-contenedor th{background:#2563eb;color:#fff;padding:12px 10px;text-align:left;font-size:13px;white-space:nowrap}.tabla-listas-contenedor td{padding:12px 10px;border-bottom:1px solid #edf0f4;font-size:13px;white-space:nowrap}.tabla-listas-contenedor tbody tr:hover{background:#f8faff}.estado-lista-activo,.estado-lista-inactivo{display:inline-block;padding:4px 9px;border-radius:20px;font-size:12px;font-weight:600}.estado-lista-activo{background:#dcfce7;color:#166534}.estado-lista-inactivo{background:#fee2e2;color:#991b1b}.sin-listas{text-align:center;color:#64748b;padding:30px!important}@media(max-width:900px){.resumen-listas{grid-template-columns:repeat(2,1fr)}.encabezado-listas{align-items:flex-start;flex-direction:column}}@media(max-width:560px){.resumen-listas{grid-template-columns:1fr}.listas-layout .contenido{padding:20px}.barra-listas{align-items:stretch}.busqueda-listas,.filtro-listas,.btn-limpiar-listas{width:100%;box-sizing:border-box}}
+
+.lista-para-imprimir {
+    display: none;
+}
+
+@media print {
+    @page {
+        margin: 15mm;
+    }
+
+    body {
+        background: #fff !important;
+    }
+
+    #app > *:not(.lista-para-imprimir) {
+        display: none !important;
+    }
+
+    .lista-para-imprimir {
+        display: block !important;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        color: #222;
+    }
+
+    .lista-para-imprimir h1 {
+        text-align: center;
+        color: #1e3a8a;
+        font-size: 20px;
+        margin: 0 0 5px;
+    }
+
+    .lista-para-imprimir > p {
+        text-align: center;
+        color: #555;
+        font-size: 11px;
+        margin: 0 0 18px;
+    }
+
+    .lista-para-imprimir table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .lista-para-imprimir th,
+    .lista-para-imprimir td {
+        border: 1px solid #999;
+        padding: 7px;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    .lista-para-imprimir th {
+        background: #e9eefc !important;
+    }
+
+    .lista-para-imprimir .total-impresion {
+        text-align: left;
+        margin-top: 12px;
+        font-size: 11px;
+    }
+}

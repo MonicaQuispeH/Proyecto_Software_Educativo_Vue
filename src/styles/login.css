@@ -1,0 +1,31 @@
+
+.gato-auth.login-infantil{background:radial-gradient(circle at 9% 15%,#fff2aa 0,transparent 25%),radial-gradient(circle at 90% 85%,#ffc5e1 0,transparent 29%),linear-gradient(140deg,#c9f0ff,#e8e4ff 60%,#ffe8f5);padding:25px 15px}
+.login-infantil .login-infantil-tarjeta{width:min(100%,530px);border:4px solid #fff;border-radius:30px;padding:26px clamp(20px,4vw,38px);box-shadow:0 20px 48px #243b6033}
+.login-infantil-imagenes{display:flex;justify-content:center;align-items:center;gap:14px;margin-bottom:12px}
+.login-infantil-logo{width:110px;height:100px;object-fit:contain}
+.login-infantil-gato{width:90px;height:95px;object-fit:contain}
+.login-infantil h1{text-align:center;font-weight:900;font-size:clamp(1.8rem,4.5vw,2.35rem);color:#243367;line-height:1.2;margin:10px 0}
+.login-infantil-subtitulo{text-align:center;font-size:1.08rem;color:#46587a;font-weight:650}
+.login-infantil-saludo{text-align:center;background:#fff2be;color:#755000;border:2px solid #ffdc7a;border-radius:14px;padding:11px;margin:18px 0;font-weight:750}
+.login-infantil .form-label{font-weight:800;color:#263b6b;margin:5px 0 7px}
+.login-infantil .login-infantil-campo{border:2px solid #b6c8f4;border-radius:14px;padding:13px 15px;font-size:1.05rem;margin-bottom:16px;color:#1e3052}
+.login-infantil .login-infantil-campo:focus{border-color:#724acb;box-shadow:0 0 0 3px #724acb33}
+.login-infantil-entrar,.login-infantil-estudiante{display:block;width:100%;text-align:center;border-radius:16px;font-weight:850;font-size:1.14rem;padding:13px 18px;text-decoration:none;transition:filter .2s,transform .2s}
+.login-infantil-entrar{background:#295ee9;color:#fff;border:2px solid #1d4cbd;cursor:pointer;box-shadow:0 5px 0 #193f9e}
+.login-infantil-entrar:hover:not(:disabled){filter:brightness(1.1);transform:translateY(-1px)}
+.login-infantil-entrar:disabled{opacity:.65;cursor:wait}
+.login-infantil-separador{display:flex;gap:12px;align-items:center;margin:24px 0 10px;font-weight:800;color:#435476}
+.login-infantil-separador:before,.login-infantil-separador:after{content:"";height:1px;background:#d3ddf0;flex:1}
+.login-infantil-ayuda{color:#46587a;text-align:center;line-height:1.5}
+.login-infantil-estudiante{background:#e1fff0;color:#0b6540;border:2px solid #49b982}
+.login-infantil-estudiante:hover{background:#c9f6de;color:#084d32}
+.login-infantil-volver{display:block;text-align:center;margin-top:18px;color:#5f3ba8;text-decoration:underline;font-weight:750}
+.login-infantil :is(button,a,input):focus-visible{outline:3px solid #ffc94b;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.login-infantil-entrar,.login-infantil-estudiante{transition:none}}
+
+.login-infantil-imagenes { margin-bottom: 12px; }
+.login-infantil-logo { width: 145px; height: 115px; }
+.login-infantil-entrar.gato-boton,.login-infantil-estudiante.gato-boton,.login-infantil-volver.gato-boton { width: 100%; border-radius: var(--gato-radio-boton); display: flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 800; padding: 13px 18px; }
+.login-infantil-entrar.gato-boton { background:#225de8; color:#fff !important; border-color:#174cc6; box-shadow:0 5px 0 #153b9e; }
+.login-infantil-estudiante.gato-boton { background:#0c955f; color:#fff !important; border-color:#087b4f; box-shadow:0 5px 0 #086343; }
+.login-infantil-volver.gato-boton { background:#f6a92c; color:#342007 !important; border-color:#ce7c13; box-shadow:0 5px 0 #a85d0c; margin-top: 19px; }

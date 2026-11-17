@@ -1,0 +1,321 @@
+
+
+.tabla-cursos-contenedor {
+
+    width: 100%;
+    max-width: 100%;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .08);
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.tabla-cursos {
+
+    width: 100%;
+    max-width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+}
+
+.tabla-cursos th {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px 10px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+}
+
+.tabla-cursos td {
+
+    padding: 12px 10px;
+
+    border-bottom: 1px solid #eee;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    box-sizing: border-box;
+
+}
+
+.tabla-cursos tbody tr:hover {
+
+    background: #f8f9ff;
+
+}
+
+.tabla-cursos th:nth-child(1),
+.tabla-cursos td:nth-child(1) {
+
+    width: 7%;
+
+}
+
+.tabla-cursos th:nth-child(2),
+.tabla-cursos td:nth-child(2) {
+
+    width: 30%;
+
+}
+
+.tabla-cursos th:nth-child(3),
+.tabla-cursos td:nth-child(3) {
+
+    width: 22%;
+
+}
+
+.tabla-cursos th:nth-child(4),
+.tabla-cursos td:nth-child(4) {
+
+    width: 41%;
+
+}
+
+.estado-curso {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+.estado-curso-activo {
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+}
+
+.estado-curso-inactivo {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+.acciones-curso {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 6px;
+
+    width: 100%;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+}
+
+.acciones-curso button {
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    color: white;
+
+    transition: .2s;
+
+    box-sizing: border-box;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.btn-curso-editar {
+
+    width: 32px;
+
+    min-width: 32px;
+
+    height: 32px;
+
+    min-height: 32px;
+
+    padding: 0;
+
+    background: #f59e0b;
+
+}
+
+.btn-curso-editar:hover {
+
+    background: #d97706;
+
+    transform: scale(1.05);
+
+}
+
+.btn-curso-desactivar {
+
+    width: 75px;
+
+    min-width: 75px;
+
+    height: 32px;
+
+    min-height: 32px;
+
+    padding: 0 6px;
+
+    background: #ef4444;
+
+    font-size: 11px;
+
+}
+
+.btn-curso-desactivar:hover {
+
+    background: #dc2626;
+
+    transform: scale(1.05);
+
+}
+
+.btn-curso-activar {
+
+    width: 65px;
+
+    min-width: 65px;
+
+    height: 32px;
+
+    min-height: 32px;
+
+    padding: 0 6px;
+
+    background: #16a34a;
+
+    font-size: 11px;
+
+}
+
+.btn-curso-activar:hover {
+
+    background: #15803d;
+
+    transform: scale(1.05);
+
+}
+
+.btn-curso-editar i {
+
+    line-height: 1;
+
+    font-size: 12px;
+
+}
+
+.tabla-cursos .sin-resultados-cursos {
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+}
+
+@media (max-width: 800px) {
+
+    .tabla-cursos th,
+    .tabla-cursos td {
+
+        padding: 10px 7px;
+
+        font-size: 13px;
+
+    }
+
+    .acciones-curso {
+
+        gap: 4px;
+
+    }
+
+    .btn-curso-editar {
+
+        width: 32px;
+
+        min-width: 32px;
+
+    }
+
+    .btn-curso-desactivar {
+
+        width: 75px;
+
+        min-width: 75px;
+
+    }
+
+    .btn-curso-activar {
+
+        width: 65px;
+
+        min-width: 65px;
+
+    }
+
+}

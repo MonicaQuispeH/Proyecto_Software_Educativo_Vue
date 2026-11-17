@@ -1,0 +1,343 @@
+
+
+.modal-curso-fondo {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(15, 23, 42, .55);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    z-index: 9999;
+
+}
+
+.modal-curso {
+
+    width: 520px;
+
+    max-width: 100%;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .25);
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+}
+
+.modal-curso-encabezado {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 22px 25px;
+
+    border-bottom: 1px solid #eee;
+
+    box-sizing: border-box;
+
+}
+
+.modal-curso-encabezado h2 {
+
+    margin: 0;
+
+    color: #1e3a8a;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+}
+
+.modal-curso-encabezado p {
+
+    margin: 5px 0 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+.btn-cerrar-curso {
+
+    width: 38px;
+
+    height: 38px;
+
+    min-width: 38px;
+
+    min-height: 38px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ef4444;
+
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 17px;
+
+    transition: .2s;
+
+}
+
+.btn-cerrar-curso:hover {
+
+    background: #dc2626;
+
+    transform: scale(1.05);
+
+}
+
+.btn-cerrar-curso i {
+
+    line-height: 1;
+
+}
+
+.modal-curso-contenido {
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+}
+
+.campo-curso {
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+
+}
+
+.campo-curso label {
+
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+.campo-curso input {
+
+    width: 100%;
+
+    height: 44px;
+
+    box-sizing: border-box;
+
+    padding: 10px 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: #f8fafc;
+
+    color: #1f2937;
+
+    transition: .2s;
+
+}
+
+.campo-curso input::placeholder {
+
+    color: #9ca3af;
+
+}
+
+.campo-curso input:focus {
+
+    border-color: #2563eb;
+
+    background: white;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .10);
+
+}
+
+.modal-curso-pie {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 18px 25px;
+
+    background: #f8fafc;
+
+    border-top: 1px solid #eee;
+
+    box-sizing: border-box;
+
+}
+
+.btn-cancelar-curso {
+
+    min-width: 138px;
+
+    height: 54px;
+
+    padding: 0 22px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #e5e7eb;
+
+    color: #374151;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: .2s;
+
+}
+
+.btn-cancelar-curso:hover {
+
+    background: #d1d5db;
+
+}
+
+.btn-guardar-curso {
+
+    min-width: 175px;
+
+    height: 54px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    transition: .2s;
+
+}
+
+.btn-guardar-curso:hover {
+
+    background: #1d4ed8;
+
+}
+
+.btn-guardar-curso i {
+
+    font-size: 16px;
+
+}
+
+@media (max-width: 600px) {
+
+    .modal-curso-fondo {
+
+        padding: 15px;
+
+    }
+
+    .modal-curso {
+
+        width: 100%;
+
+        border-radius: 15px;
+
+    }
+
+    .modal-curso-encabezado {
+
+        padding: 20px;
+
+    }
+
+    .modal-curso-contenido {
+
+        padding: 20px;
+
+    }
+
+    .modal-curso-pie {
+
+        padding: 15px 20px;
+
+    }
+
+    .btn-cancelar-curso,
+    .btn-guardar-curso {
+
+        min-width: 0;
+
+        flex: 1;
+
+    }
+
+}

@@ -1,0 +1,31 @@
+.dashboard {
+    display: flex;
+}
+
+.contenido {
+    flex: 1;
+    padding: 30px;
+    background: #f4f7fb;
+    min-height: calc(100vh - 70px);
+}
+
+.bienvenida {
+    margin-bottom: 30px;
+}
+
+.bienvenida h1 {
+    font-size: 30px;
+    color: #1e3a8a;
+}
+
+.bienvenida p {
+    margin-top: 8px;
+    color: #666;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: start;
+}

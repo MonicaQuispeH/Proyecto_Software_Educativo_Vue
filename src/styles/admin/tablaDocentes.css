@@ -1,0 +1,288 @@
+
+
+.tabla-docentes-contenedor {
+
+    width: 100%;
+    max-width: 100%;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 14px;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,.08);
+
+    box-sizing: border-box;
+
+    overflow-x: auto;
+}
+
+.tabla-docentes {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+
+}
+
+.tabla-docentes th {
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 15px 12px;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+}
+
+.tabla-docentes td {
+
+    padding: 15px 12px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 15px;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    box-sizing: border-box;
+
+}
+
+.tabla-docentes tbody tr:hover {
+
+    background: #f8f9ff;
+
+}
+
+.tabla-docentes .col-numero {
+
+    width: 6%;
+
+}
+
+.tabla-docentes .col-nombre {
+
+    width: 13%;
+
+}
+
+.tabla-docentes .col-apellido {
+
+    width: 20%;
+
+}
+
+.tabla-docentes .col-ci {
+
+    width: 13%;
+
+}
+
+.tabla-docentes .col-curso {
+
+    width: 9%;
+
+}
+
+.tabla-docentes .col-estado {
+
+    width: 13%;
+
+}
+
+.tabla-docentes .col-acciones {
+
+    width: 26%;
+
+}
+
+.estado-docente {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+.estado-activo {
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+}
+
+.estado-inactivo {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+.acciones-docente {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.acciones-docente button {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+}
+
+.btn-accion {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+}
+
+.tabla-docentes .btn-editar {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+    background: #f59e0b !important;
+    color: white !important;
+}
+
+.tabla-docentes .btn-editar:hover {
+    background: #d97706 !important;
+    transform: scale(1.05);
+}
+
+.tabla-docentes .btn-password {
+    width: 32px !important;
+    min-width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+    background: #6366f1 !important;
+    color: white !important;
+}
+
+.tabla-docentes .btn-password:hover {
+    background: #4f46e5 !important;
+    transform: scale(1.05);
+}
+
+.tabla-docentes .btn-desactivar {
+    width: 75px !important;
+    min-width: 75px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+    border-radius: 6px !important;
+    background: #ef4444 !important;
+    color: white !important;
+    font-size: 11px !important;
+}
+
+.tabla-docentes .btn-desactivar:hover {
+    background: #dc2626 !important;
+    transform: scale(1.05);
+}
+
+.tabla-docentes .btn-activar {
+    width: 65px !important;
+    min-width: 65px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+    border-radius: 6px !important;
+    background: #16a34a !important;
+    color: white !important;
+    font-size: 11px !important;
+}
+
+.tabla-docentes .btn-activar:hover {
+    background: #15803d !important;
+    transform: scale(1.05);
+}
+
+.tabla-docentes .btn-accion i {
+    line-height: 1;
+    font-size: 12px;
+}
+
+.tabla-docentes .sin-resultados {
+
+    text-align: center;
+
+    color: #64748b;
+
+    padding: 30px;
+
+    font-size: 14px;
+
+}
+
+@media (max-width: 1000px) {
+
+    .tabla-docentes-contenedor {
+
+        overflow-x: auto;
+
+    }
+
+    .tabla-docentes {
+
+        min-width: 850px;
+
+    }
+
+}
+
+.tabla-docentes .col-celular {
+    width: 14%;
+}

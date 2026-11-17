@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+
+.navbar {
+    height: 82px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 55%, #4f46e5 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 0 18px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, .14);
+}
+
+.navbar-marca {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-width: 0;
+    height: 100%;
+}
+
+.navbar-marca-logo {
+    width: 76px;
+    height: 76px;
+    object-fit: contain;
+    flex: 0 0 76px;
+    filter: drop-shadow(0 4px 5px rgba(0, 0, 0, .18));
+}
+
+.navbar-marca-titulo {
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", "Comic Sans MS", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .14);
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-salir {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #2563eb;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 700;
+}
+
+.btn-salir:hover {
+    background: #dbeafe;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        height: 72px;
+        padding-right: 12px;
+        padding-left: 10px;
+    }
+
+    .navbar-marca-logo {
+        width: 62px;
+        height: 62px;
+        flex-basis: 62px;
+    }
+
+    .navbar-marca-titulo {
+        font-size: 20px;
+        letter-spacing: .7px;
+    }
+
+    .navbar-user {
+        gap: 8px;
+    }
+
+    .navbar-user > span {
+        display: none;
+    }
+
+    .btn-salir {
+        padding: 8px 11px;
+    }
+}
+
+.navbar-marca-titulo { font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif; font-weight: 1000; font-size: clamp(20px, 2.1vw, 34px); letter-spacing: 1.5px; -webkit-text-stroke: .5px #fff; filter: drop-shadow(0 3px 0 rgba(17,37,99,.25)); }
+.navbar-marca-titulo .titulo-gato { color:#ffe86b; text-shadow: 1px 2px 0 #f49a32, 2px 4px 0 #b65a43; }
+.navbar-marca-titulo .titulo-lecturas { color:#b8fff2; text-shadow: 1px 2px 0 #3fb8cb, 2px 4px 0 #246a9e; }
+
+.navbar-marca-titulo { font-family: "Rakkas", "Arial Rounded MT Bold", cursive !important; font-size: clamp(24px, 2.5vw, 36px) !important; letter-spacing: 1px; -webkit-text-stroke: .35px rgba(255,255,255,.65); }
+.navbar-marca-titulo .titulo-gato { color: #ffdb62; text-shadow: 2px 3px 0 #92400e, 0 0 5px #fff; }
+.navbar-marca-titulo .titulo-lecturas { color: #fff; text-shadow: 2px 3px 0 #9333ea, 0 0 5px #fff; }
+
+.navbar-marca-titulo { font-size: clamp(28px,3.1vw,46px) !important; line-height:1.05; }
+.navbar-marca-titulo .titulo-gato,
+.navbar-marca-titulo .titulo-lecturas { color:#ffdb62 !important; text-shadow:2px 3px 0 #92400e,0 0 5px #fff !important; }
+@media(max-width:760px){.navbar-marca-titulo{font-size:clamp(19px,4vw,29px)!important;letter-spacing:0}}

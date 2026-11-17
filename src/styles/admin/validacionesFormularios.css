@@ -1,0 +1,30 @@
+
+.modal-docente .campo .invalid-feedback,.modal-docente .campo .error-campo,
+.modal-estudiante .campo .invalid-feedback,.modal-estudiante .campo .error-campo,
+.modal-lectura .campo .invalid-feedback,.modal-evaluacion .campo .invalid-feedback,
+.modal-curso .campo .invalid-feedback,.invalid-feedback.d-block {
+ display:block; color:#b42318; background:#fff1f0; border:1px solid #fecaca; border-radius:9px;
+ font-size:13px; font-weight:650; padding:7px 10px; margin-top:6px; line-height:1.4;
+}
+.is-invalid {border:2px solid #dc3545 !important; background-color:#fffafa !important;}
+.campo:focus-within .invalid-feedback {outline:0;}
+
+.modal-fondo .modal-docente, .modal-fondo-lectura .modal-lectura,
+.modal-evaluacion-fondo .modal-evaluacion, .modal-curso-fondo .modal-curso {
+ display:flex !important; flex-direction:column !important; max-height:92dvh !important;
+}
+.modal-docente .modal-contenido, .modal-lectura .modal-lectura-contenido,
+.modal-evaluacion .modal-evaluacion-body, .modal-curso .modal-curso-contenido {
+ overflow-y:auto !important; min-height:0 !important; flex:1 1 auto !important;
+}
+.modal-docente .modal-pie, .modal-lectura .modal-lectura-pie,
+.modal-evaluacion .modal-evaluacion-footer, .modal-curso .modal-curso-pie {
+ flex-shrink:0 !important; position:relative !important; z-index:3 !important;
+}
+
+.modal-estudiante .error-campo-estudiante, .error-campo-estudiante {
+ display:block!important; color:#b42318!important; background:#fff1f0!important;
+ border:1px solid #fecaca!important; border-radius:9px!important;
+ font-size:13px!important; font-weight:650!important; padding:7px 10px!important;
+ margin:6px 0 0!important; line-height:1.4!important; text-align:center;
+}
